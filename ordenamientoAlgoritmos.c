@@ -27,5 +27,27 @@ void ordenamiento_burbuja(int arr[], int n)
 int main()
 {
     srand(time(NULL));
+
+    int numeros_burbuja[100];
+    printf("Arreglo inicial para burbuja \n");
+    for(int i = 0; i< 100; i++)
+    {
+        numeros_burbuja[i] = rand() % 100;
+        printf("%d ",numeros_burbuja[i]);
+    }
+
+
+    printf("Ordenamiento burbuja : \n");
+    ordenamiento_burbuja(numeros_burbuja,100);
+
+    printf("Arreglo ordenado con algoritmo burbuja : \n");
+    for(int i = 0; i< 100; i++)
+    {
+        printf("%d ",numeros_burbuja[i]);
+    }
+
+
     return 0;
+
+
 }
