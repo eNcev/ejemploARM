@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdlib.h>
 
-
 void intercambiar(int* a, int* b)
 {
     int temp = *a;
@@ -53,9 +52,20 @@ int main()
         printf("%d ",numeros_burbuja[i]);
     }
 
+    int numeros_insercion[100];
+    printf("Arreglo inicial para insercion \n");
+    for(int i = 0; i< 100; i++)
+    {
+        numeros_insercion[i] = rand() % 100;
+        printf("%d ",numeros_insercion[i]);
+    }
+
 
     printf("Ordenamiento burbuja : \n");
     ordenamiento_burbuja(numeros_burbuja,100);
+
+    printf("Ordenamiento insercion : \n");
+    ordenamiento_insercion(numeros_insercion,100);
 
     printf("Arreglo ordenado con algoritmo burbuja : \n");
     for(int i = 0; i< 100; i++)
@@ -63,7 +73,11 @@ int main()
         printf("%d ",numeros_burbuja[i]);
     }
 
+    printf("Arreglo ordenado con algoritmo insercion : \n");
+    for(int i = 0; i< 100; i++)
+    {
+        printf("%d ",numeros_insercion[i]);
+    }
+
     return 0;
-
-
 }
