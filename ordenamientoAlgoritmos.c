@@ -46,7 +46,6 @@ int main()
         printf("%d ",numeros_burbuja[i]);
     }
 
-
     return 0;
 
 
